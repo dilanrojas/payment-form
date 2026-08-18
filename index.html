@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es" class="h-full bg-gray-50">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="./app.js" defer></script>
+  <title>Tabla de pagos</title>
+</head>
+
+<body class="min-h-full font-sans antialiased text-gray-900">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+
+    <!-- Top Bar -->
+    <header class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-8">
+      <div>
+        <h1 class="text-2xl font-bold tracking-tight text-gray-900">Lista de clientes</h1>
+        <p class="mt-1 text-sm text-gray-500">Gestión e historial de métodos de pago registrados.</p>
+      </div>
+      <div>
+        <button type="button" onclick="window.location.href='payment-form.html'"
+          class="inline-flex items-center gap-2 px-4 py-2 text-sm font-semibold text-gray-700 bg-white border border-gray-300 rounded-lg shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 transition-colors">
+          <svg class="w-4 h-4 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+          </svg>
+          Volver
+        </button>
+      </div>
+    </header>
+
+    <!-- Main Content Card -->
+    <main class="bg-white rounded-xl shadow-sm border border-gray-200 overflow-hidden">
+      <div class="overflow-x-auto">
+        <table class="w-full text-left text-sm text-gray-600">
+          <thead
+            class="bg-gray-50/75 border-b border-gray-200 uppercase text-xs font-semibold tracking-wider text-gray-500">
+            <tr>
+              <th scope="col" class="px-6 py-4">Nombre</th>
+              <th scope="col" class="px-6 py-4">Correo electrónico</th>
+              <th scope="col" class="px-6 py-4">Tipo de tarjeta</th>
+              <th scope="col" class="px-6 py-4 text-right">Acciones</th>
+            </tr>
+          </thead>
+          <tbody id="payment-list" class="divide-y divide-gray-200 bg-white">
+            <!-- Dynamic rows will render here -->
+          </tbody>
+        </table>
+      </div>
+    </main>
+
+  </div>
+</body>
+
+</html>
