@@ -3,7 +3,7 @@
 Creating an app that simulates a payment method and displays a table with clients information.
 
 ## Preview
-<img src="./preview.png" alt="Image of a Web project" />
+<img src="./image.png" alt="Image of a Web project" />
 
 # Preguntas
 
